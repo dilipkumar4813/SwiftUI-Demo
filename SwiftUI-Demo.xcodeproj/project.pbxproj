@@ -16,6 +16,8 @@
 		DA9B01A7244C4DC000D77A96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA9B01A5244C4DC000D77A96 /* LaunchScreen.storyboard */; };
 		DA9B01B2244C4DC000D77A96 /* SwiftUI_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B01B1244C4DC000D77A96 /* SwiftUI_DemoTests.swift */; };
 		DA9B01BD244C4DC000D77A96 /* SwiftUI_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B01BC244C4DC000D77A96 /* SwiftUI_DemoUITests.swift */; };
+		DA9B01CD244C502F00D77A96 /* BasicDesignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B01CC244C502F00D77A96 /* BasicDesignView.swift */; };
+		DA9B01D7244D718600D77A96 /* BasicShapesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B01D6244D718600D77A96 /* BasicShapesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		DA9B01B8244C4DC000D77A96 /* SwiftUI-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9B01BC244C4DC000D77A96 /* SwiftUI_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_DemoUITests.swift; sourceTree = "<group>"; };
 		DA9B01BE244C4DC000D77A96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA9B01CC244C502F00D77A96 /* BasicDesignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicDesignView.swift; sourceTree = "<group>"; };
+		DA9B01D6244D718600D77A96 /* BasicShapesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicShapesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +105,8 @@
 		DA9B0196244C4DBC00D77A96 /* SwiftUI-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				DA9B0197244C4DBC00D77A96 /* AppDelegate.swift */,
-				DA9B0199244C4DBC00D77A96 /* SceneDelegate.swift */,
-				DA9B019E244C4DBC00D77A96 /* ContentView.swift */,
+				DA9B01CB244C4FA200D77A96 /* Supporting Files */,
+				DA9B01CA244C4F9200D77A96 /* Views */,
 				DA9B01A0244C4DC000D77A96 /* Assets.xcassets */,
 				DA9B01A5244C4DC000D77A96 /* LaunchScreen.storyboard */,
 				DA9B01A8244C4DC000D77A96 /* Info.plist */,
@@ -137,6 +140,25 @@
 				DA9B01BE244C4DC000D77A96 /* Info.plist */,
 			);
 			path = "SwiftUI-DemoUITests";
+			sourceTree = "<group>";
+		};
+		DA9B01CA244C4F9200D77A96 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA9B019E244C4DBC00D77A96 /* ContentView.swift */,
+				DA9B01CC244C502F00D77A96 /* BasicDesignView.swift */,
+				DA9B01D6244D718600D77A96 /* BasicShapesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA9B01CB244C4FA200D77A96 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA9B0197244C4DBC00D77A96 /* AppDelegate.swift */,
+				DA9B0199244C4DBC00D77A96 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +295,9 @@
 				DA9B019D244C4DBC00D77A96 /* SwiftUI_Demo.xcdatamodeld in Sources */,
 				DA9B0198244C4DBC00D77A96 /* AppDelegate.swift in Sources */,
 				DA9B019F244C4DBC00D77A96 /* ContentView.swift in Sources */,
+				DA9B01D7244D718600D77A96 /* BasicShapesView.swift in Sources */,
 				DA9B019A244C4DBC00D77A96 /* SceneDelegate.swift in Sources */,
+				DA9B01CD244C502F00D77A96 /* BasicDesignView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +467,7 @@
 				DEVELOPMENT_TEAM = ERF95T2X5A;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,6 +488,7 @@
 				DEVELOPMENT_TEAM = ERF95T2X5A;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
