@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct ContentView: View {
+	
+	@State private var showScreen: Bool = false
+	
     var body: some View {
 		NavigationView {
 			VStack(alignment: .leading, spacing: 10) {
@@ -22,6 +25,14 @@ struct ContentView: View {
 					Text("Basic Shapes")
 						.padding(10)
 						.frame(maxWidth: .infinity, alignment: .leading)
+				}
+				
+				Button("Present View") {
+					self.showScreen.toggle()
+				}
+				.padding(10)
+				.sheet(isPresented: $showScreen) {
+					Text("Hello")
 				}
 				
 				Spacer()
